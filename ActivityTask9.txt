@@ -1,0 +1,702 @@
+HTML Task to know usage of basic tags.
+
+ 1. Fix the bugs in below snippet
+ ==================================
+    <html lang="en">
+    <head>
+        <title>Document
+            <body>
+                guvi
+        </title>
+    </head>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html>
+
+    Solution:
+    ============
+    The order of html document structure is not correct
+    <html>
+      <head>
+         <title> Document</title>
+         </head>
+    <body>
+       <div>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+           <p>  Guvi Geek Network </p>
+       </div>
+    </body>
+
+
+    2. Try this
+    ==========
+    <html lang="en">
+    <head>
+        <title>Document
+            <body>
+                guvi
+    </head>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html>
+
+
+    Solution:
+    ===========
+    Nothing is going to print in web page
+    Because body is embeded inside head tag & title tag has no closing tag...
+
+
+    3. Design a contact us form with all fields as required.
+=========================================================================
+ <style>
+        .form-elements{
+            margin: 10px;
+            padding: 5px;
+            
+        }
+        .contact-us-form{
+            border: 5px groove rgb(148, 224, 47);
+            border-radius: 20px;
+            width: 50%;
+            margin-left: 10%;
+        }
+        .contact-us-form h1{
+            text-align: center;
+            border-bottom: 2px double rgb(152, 223, 59);
+        }
+    </style>
+
+------------------
+<body>
+ <div>
+        <h1>Guvi Geek Network</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quasi!</p>
+
+    </div>
+
+    <div class="contact-us-form">
+        <h1>Contact Us</h1>
+        <form>
+        <div class="form-elements">
+            <label for="firstname">First Name :</label>
+            <input type="text" id="firstname" placeholder="Enter First Name" required />
+        </div>
+
+        <div class="form-elements">
+            <label for="lastname">Last Name :</label>
+            <input type="text" id="lastname" placeholder="Enter Last Name" required />
+        </div>
+
+        <div class="form-elements">
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter Email Id" required />
+        </div>
+
+        <div class="form-elements">
+            <label for="phone">Phone Number :</label>
+            <input type="text" id="phone" placeholder="Enter Phone Number" minlength="8" maxlength="10" required />
+        </div>
+
+        <div class="form-elements">
+            <label for="gender">Gender :</label>
+            <input type="radio" id="gender" required name="gender" required  /> Male
+            <input type="radio" id="gender" required name="gender" required /> Female
+            <input type="radio" id="gender" required name="gender" required /> Others
+        </div>
+
+
+        <div class="form-elements">
+            <input type="checkbox" /> I have read terms and conditions T@C
+        </div>
+
+        <div class="form-elements">
+            <input type="submit" value="Submit Here!.." /> 
+        </div>
+</form>
+
+
+
+    </div>
+</body>
+
+===========================================================
+4. Use certain HTML elements to display the following in a HTML page.
+=========================================================
+Solution;
+-------
+
+<div class="Ordered-un-list">
+    <h1>Ordered & Un-Ordered Lists</h1>
+    <div class="hierachy">
+        <ul>
+            <li>Programming Language</li>
+             <ul>
+                <li>JavaScript</li>
+                <ul>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                </ul>
+             </ul>
+             <ul>
+                <li>Python</li>
+                <ul>
+                    <li>Django Framework</li>
+                    <li>Flask Framework</li>
+                   
+                </ul>
+             </ul>
+             <ul>
+                <li>Java</li>
+                <ul>
+                    <li>Spring</li>
+                    <li>Maven</li>
+                    <li>Hibernate</li>
+                </ul>
+             </ul>
+
+             <ul>
+                <li>Database</li>
+                <ul>
+                    <li>MYSQL</li>
+                    <li>MongoDB</li>
+                    <li>Cansandra</li>
+                </ul>
+             </ul>
+        </ul>
+    </div>
+</div>
+
+-------------------------
+5. Create an element that helps you to open the https://google.com in separate new tab.
+
+<div class="anchor">
+    <a href="https://google.com">Go to Google </a>
+</div>
+
+-------------------------------------
+
+6.In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+
+<div class="radio">
+    <p>Add two radio buttons with grouping them for employee type(Salaried and own business)</p>
+    <form>
+        <label for="emp">Employee Type</label>
+        <input type="radio" id="emp" name="empe">Salaried
+        <input type="radio" id="emp" name="empe">Own Business
+    </form>
+</div>
+===========================================================
+7. Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
+
+Link is not working........
+
+=========================================================
+
+8. Use the table tag to design given image
+
+
+  <div class="table">
+        <p>Health chart</p>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">State of Health</th>
+                    <th rowspan="1" colspan="2">Fasting Value</th>
+                    <th rowspan="1">After Eating</th>
+                </tr>
+              <tr>
+                  <td>Minimum</td>
+                  <td>Maximum</td>
+                  <td>2 hours after eating</td>
+              </tr>
+             
+            </thead>
+              <tr>
+                  <td>Healthy</td>
+                  <td>70</td>
+                  <td>100</td>
+                  <td>Less than 140</td>
+              </tr>
+
+              <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200 </td>
+            </tr>
+
+            <tr>
+                <td>Diabetes</td>
+                <td>More than 126</td>
+                <td>N/A</td>
+                <td>More than 200 </td>
+            </tr>
+          
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    --------------------------------------------
+
+10. In your, HTML page add the below line and Highlight it without using any CSS.
+
+<div class="quotes">
+        <q>HTML & CSS is awesome</q>
+    </div>
+
+    ===============================================
+
+9. Write HTML input tags snippet to show default values for all Form elements.
+
+
+    <p>HTML input tags snippet to show default values for all Form elements.</p>
+    <div class="contact-us-form">
+        <h1>Contact Us (Default value)</h1>
+        <p>( Show default values for all Form elements. )</p>
+        <form>
+            <div class="form-elements">
+                <label for="firstname">First Name :</label>
+                <input type="text" id="firstname" placeholder="Enter First Name" Value="John" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="lastname">Last Name :</label>
+                <input type="text" id="lastname" placeholder="Enter Last Name" Value="Doe" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="Enter Email Id" Value="abc@gmail.com" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="phone">Phone Number :</label>
+                <input type="text" id="phone" placeholder="Enter Phone Number" minlength="8" maxlength="10" value="998657575" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="gender">Gender :</label>
+                <input type="radio" id="gender" required name="gender" required checked /> Male
+                <input type="radio" id="gender" required name="gender" required /> Female
+                <input type="radio" id="gender" required name="gender" required /> Others
+            </div>
+
+
+            <div class="form-elements">
+                <input type="checkbox" checked /> I have read terms and conditions T@C
+            </div>
+
+            <div class="form-elements">
+                <input type="submit" value="Submit Here!.." />
+            </div>
+        </form>
+
+    </div>
+
+    ----------------------------------------------------------
+    11. Create an HTML page, which should contain all types of input elements.
+
+       <div class="input-all">
+        <div class="form-elements">
+          
+            <input type="text"  placeholder="Enter Name" required />
+        </div>
+        <div class="form-elements">
+          <input type="password"  placeholder="Enter Your Password" required />
+        </div>
+
+        <div class="form-elements">
+            <input type="number"  placeholder="Enter  Number" required />
+          </div>
+
+          <div class="form-elements">
+            <input type="range"   />
+          </div>
+
+          <div class="form-elements">
+            <input type="date"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="number"  placeholder="Enter  Number" required />
+          </div>
+
+          <div class="form-elements">
+            <input type="color"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="email" placeholder="Enter Password"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="File" accept=".jpg,.png,.doc,.docx"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Standard-lock-key.jpg/640px-Standard-lock-key.jpg" alt="Key-Image" width="200" height="100"/>
+          </div>
+
+          <div class="form-elements">
+            <input type="search" placeholder="Seach here...!"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="url" placeholder="Enter url Link"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="time"   />
+          </div>
+
+          <div class="form-elements">
+            <input type="week"   />
+          </div>
+
+          <div class="form-elements">
+            <input type="tel" placeholder="enter Tel.no"   />
+          </div>
+          <div class="form-elements">
+            <input type="submit" value="submit here..!"  />  &nbsp;
+            <input type="reset"  />
+          </div>
+
+    </div>
+
+
+
+=============================================================================================================================================================================================================================================================================================================================================
+
+Complete Source code:--
+---------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActivityTask(html) - Day1</title>
+    <style>
+        .heading h1 {
+            text-align: center;
+            border-bottom: 4px groove rgb(49, 49, 49);
+        }
+
+        .form-elements {
+            margin: 10px;
+            padding: 5px;
+
+        }
+
+        .contact-us-form {
+            border: 5px groove rgb(148, 224, 47);
+            border-radius: 20px;
+            width: 50%;
+            /* margin-left: 10%; */
+        }
+
+        .contact-us-form h1 {
+            text-align: center;
+            border-bottom: 2px double rgb(152, 223, 59);
+        }
+        .contact-us-form p{
+            text-align: center;
+        }
+        table,tr,td,th{
+            border: 1px solid black;
+        }
+        .quotes{
+            margin-top: 20px;
+        }
+
+        @media(max-width:600px) {
+            .contact-us-form {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Guvi Geek Network</h1>
+        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quasi!</p> -->
+
+    </div>
+
+    <div class="contact-us-form">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="form-elements">
+                <label for="firstname">First Name :</label>
+                <input type="text" id="firstname" placeholder="Enter First Name" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="lastname">Last Name :</label>
+                <input type="text" id="lastname" placeholder="Enter Last Name" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="Enter Email Id" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="phone">Phone Number :</label>
+                <input type="text" id="phone" placeholder="Enter Phone Number" minlength="8" maxlength="10" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="gender">Gender :</label>
+                <input type="radio" id="gender" required name="gender" required /> Male
+                <input type="radio" id="gender" required name="gender" required /> Female
+                <input type="radio" id="gender" required name="gender" required /> Others
+            </div>
+
+
+            <div class="form-elements">
+                <input type="checkbox" /> I have read terms and conditions T@C
+            </div>
+
+            <div class="form-elements">
+                <input type="submit" value="Submit Here!.." />
+            </div>
+        </form>
+
+    </div>
+
+
+    <div class="Ordered-un-list">
+        <h1>Ordered & Un-Ordered Lists</h1>
+        <div class="hierachy">
+            <ul>
+                <li>Programming Language</li>
+                <ul>
+                    <li>JavaScript</li>
+                    <ul>
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Python</li>
+                    <ul>
+                        <li>Django Framework</li>
+                        <li>Flask Framework</li>
+
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Java</li>
+                    <ul>
+                        <li>Spring</li>
+                        <li>Maven</li>
+                        <li>Hibernate</li>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <li>Database</li>
+                    <ul>
+                        <li>MYSQL</li>
+                        <li>MongoDB</li>
+                        <li>Cansandra</li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="anchor">
+        <a href="https://google.com">Go to Google </a>
+    </div>
+
+    <div class="radio">
+        <p>Add two radio buttons with grouping them for employee type(Salaried and own business)</p>
+        <form>
+            <label for="emp">Employee Type</label>
+            <input type="radio" id="emp" name="empe">Salaried
+            <input type="radio" id="emp" name="empe">Own Business
+        </form>
+    </div>
+
+    <div class="table">
+        <p>Health chart</p>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">State of Health</th>
+                    <th rowspan="1" colspan="2">Fasting Value</th>
+                    <th rowspan="1">After Eating</th>
+                </tr>
+              <tr>
+                  <td>Minimum</td>
+                  <td>Maximum</td>
+                  <td>2 hours after eating</td>
+              </tr>
+             
+            </thead>
+              <tr>
+                  <td>Healthy</td>
+                  <td>70</td>
+                  <td>100</td>
+                  <td>Less than 140</td>
+              </tr>
+
+              <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200 </td>
+            </tr>
+
+            <tr>
+                <td>Diabetes</td>
+                <td>More than 126</td>
+                <td>N/A</td>
+                <td>More than 200 </td>
+            </tr>
+          
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+ <p> HTML page add the below line and Highlight it without using any CSS.</p>
+    <div class="quotes">
+        <q>HTML & CSS is awesome</q>
+    </div>
+
+    <p>HTML input tags snippet to show default values for all Form elements.</p>
+    <div class="contact-us-form">
+        <h1>Contact Us (Default value)</h1>
+        <p>( Show default values for all Form elements. )</p>
+        <form>
+            <div class="form-elements">
+                <label for="firstname">First Name :</label>
+                <input type="text" id="firstname" placeholder="Enter First Name" Value="John" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="lastname">Last Name :</label>
+                <input type="text" id="lastname" placeholder="Enter Last Name" Value="Doe" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="Enter Email Id" Value="abc@gmail.com" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="phone">Phone Number :</label>
+                <input type="text" id="phone" placeholder="Enter Phone Number" minlength="8" maxlength="10" value="998657575" required />
+            </div>
+
+            <div class="form-elements">
+                <label for="gender">Gender :</label>
+                <input type="radio" id="gender" required name="gender" required checked /> Male
+                <input type="radio" id="gender" required name="gender" required /> Female
+                <input type="radio" id="gender" required name="gender" required /> Others
+            </div>
+
+
+            <div class="form-elements">
+                <input type="checkbox" checked /> I have read terms and conditions T@C
+            </div>
+
+            <div class="form-elements">
+                <input type="submit" value="Submit Here!.." />
+            </div>
+        </form>
+
+    </div>
+
+<h1>All input tags</h1>
+    <div class="input-all">
+        <div class="form-elements">
+          
+            <input type="text"  placeholder="Enter Name" required />
+        </div>
+        <div class="form-elements">
+          <input type="password"  placeholder="Enter Your Password" required />
+        </div>
+
+        <div class="form-elements">
+            <input type="number"  placeholder="Enter  Number" required />
+          </div>
+
+          <div class="form-elements">
+            <input type="range"   />
+          </div>
+
+          <div class="form-elements">
+            <input type="date"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="number"  placeholder="Enter  Number" required />
+          </div>
+
+          <div class="form-elements">
+            <input type="color"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="email" placeholder="Enter Password"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="File" accept=".jpg,.png,.doc,.docx"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Standard-lock-key.jpg/640px-Standard-lock-key.jpg" alt="Key-Image" width="200" height="100"/>
+          </div>
+
+          <div class="form-elements">
+            <input type="search" placeholder="Seach here...!"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="url" placeholder="Enter url Link"  />
+          </div>
+
+          <div class="form-elements">
+            <input type="time"   />
+          </div>
+
+          <div class="form-elements">
+            <input type="week"   />
+          </div>
+
+          <div class="form-elements">
+            <input type="tel" placeholder="enter Tel.no"   />
+          </div>
+          <div class="form-elements">
+            <input type="submit" value="submit here..!"  />  &nbsp;
+            <input type="reset"  />
+          </div>
+
+    </div>
+</body>
+
+</html>
